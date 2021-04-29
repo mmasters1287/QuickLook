@@ -1,0 +1,49 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: CsvHelper
+    versions:
+    - 21.3.0
+    - 22.1.0
+    - 22.1.1
+    - 22.1.2
+    - 23.0.0
+    - 24.0.1
+    - 25.0.0
+    - 26.0.0
+    - 26.0.1
+    - 26.1.0
+    - 27.0.0
+    - 27.0.1
+  - dependency-name: MsgReader
+    versions:
+    - 3.11.0
+    - 3.12.0
+    - 3.12.1
+    - 3.12.2
+    - 3.12.3
+    - 3.12.4
+  - dependency-name: Magick.NET-Q8-AnyCPU
+    versions:
+    - 7.23.1
+    - 7.23.2
+    - 7.23.2.1
+    - 7.23.3
+  - dependency-name: AvalonEdit
+    versions:
+    - 6.0.1
+    - 6.1.0
+  - dependency-name: SharpCompress
+    versions:
+    - 0.27.1
+    - 0.28.0
+    - 0.28.1
+  - dependency-name: Newtonsoft.Json
+    versions:
+    - 12.0.3
